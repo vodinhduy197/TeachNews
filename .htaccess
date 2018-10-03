@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteBase /
+
+RewriteRule lien-he contact.php
+RewriteRule tim-kiem/ search.php
+RewriteRule  danh-muc/(.+)-([0-9]+)   catagory.php?id=$2
+RewriteRule  chi-tiet/(.+)-([0-9]+).html   single-blog.php?id=$2
+ErrorDocument 404 /404.php
